@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+.btn:hover {
+  color: none;
+  background-color: none;
+  border-color: none;
+}
+.form-select:focus {
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("./style/reactInput.css");
+@import url("./style/mainLayout.css");
+@import url("./style/reactSlider.css");
+@import url("./style/navBar.css");
+@import url("./style/title.css");
+@import url("./style/reactButtons.css");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: black !important;
+  outline: 0;
+  box-shadow: none !important;
 }

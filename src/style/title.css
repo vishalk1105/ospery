@@ -1,0 +1,7 @@
+.cardTitle {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: serif !important;
+  font-weight: 600;
+}
