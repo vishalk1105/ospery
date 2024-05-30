@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../../layout/MainLayout";
 import ReactSlider from "../../components/ReactSlider";
 import Title from "../../components/Title";
 import ReactButton from "../../components/ReactButton";
 import ReactAccordion from "../../components/ReactAccordion";
-import { MoneyEnvData } from "../../data/moneyEnevData";
-import ReactCart from "../../components/ReactCart";
+import { ItineraryData } from "../../data/itineraryData";
+import { panels } from "../../data/moneyEnevData";
 
 const Itinerary = () => {
+  const [activeId, setActiveId] = useState(null);
+  const selectPsc = (id) => {
+    setActiveId(id);
+  };
+  const btnData = [
+    {
+      id: "20env",
+      value: 20,
+      text: "20 Pcs",
+    },
+    {
+      id: "50env",
+      value: 50,
+      text: "50 Pcs",
+    },
+    {
+      id: "100env",
+      value: 100,
+      text: "100 Pcs",
+    },
+  ];
+
   return (
     <MainLayout>
       <ReactSlider />
@@ -20,26 +42,34 @@ const Itinerary = () => {
             <ReactButton btnClass={"offerDiv "} btnText={"% Offers"} />
           </div>
 
-          <div className="qtyDiv gap-5 d-flex justify-content-center">
-            <div className="qtyTitle me-4">Quantity :</div>
-            <ReactButton btnClass={"pcsBtn"} btnValue={20} btnText={"20 Pcs"} />
-            <ReactButton btnClass={"pcsBtn"} btnValue={50} btnText={"50 Pcs"} />
-            <ReactButton
-              btnClass={"pcsBtn"}
-              btnValue={100}
-              btnText={"100 Pcs"}
-            />
+          <div className="qtyDiv d-flex justify-content-center">
+            <div className="qtyTitle me-2">Quantity :</div>
+            {btnData.map((ele) => (
+              <ReactButton
+                key={ele.id}
+                id={ele.id}
+                btnClass={`pcsBtn ${activeId === ele.id ? "pcs-active" : ""}`}
+                btnValue={ele.value}
+                btnText={ele.text}
+                onClickfn={() => selectPsc(ele.id)}
+              />
+            ))}
           </div>
           <div className="accDiv">
-            {/* <div className=" addOn me-4 mb-2 text-left">Add ons :</div>*/}
             <ReactAccordion
               accContent={"contentOuterDiv"}
               accOuterClass="w-100"
-              items={MoneyEnvData}
+              items={ItineraryData}
+            />
+          </div>
+          <div className="px-4">
+            <ReactAccordion
+              items={panels}
+              accordionBtn={"accCartBtn"}
+              accContent={"cartContent"}
             />
           </div>
         </div>
-        <ReactCart />
       </div>
     </MainLayout>
   );

@@ -19,6 +19,8 @@
 @import url("./style/moneyEnvlope.css");
 @import url("./style/reactCart.css");
 @import url("./style/weddingVideo.css");
+@import url("./style/uploadFile.css");
+@import url("./style/itinerary.css");
 
 .form-control:focus {
   color: var(--bs-body-color);

@@ -47,8 +47,8 @@ function MoneyEnvelope() {
             <ReactButton btnClass={"offerDiv "} btnText={"% Offers"} />
           </div>
 
-          <div className="qtyDiv gap-5 d-flex justify-content-center">
-            <div className="qtyTitle me-4">Quantity :</div>
+          <div className="qtyDiv  d-flex justify-content-center">
+            <div className="qtyTitle me-2">Quantity :</div>
             {btnData.map((ele) => (
               <ReactButton
                 key={ele.id}

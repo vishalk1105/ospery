@@ -13,7 +13,7 @@ const WeddingInvVideo = () => {
       <ReactSlider />
       <div className="container">
         <Title
-          titleText={"Wedding invite video"}
+          titleText={"Wedding Invite Video"}
           titleNameClass={"mt-5 mb-3"}
         />
 

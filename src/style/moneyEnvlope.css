@@ -1,5 +1,5 @@
 .priceLable {
-  font-size: 3rem;
+  font-size: 50px;
   text-align: center;
   color: var(--secondary-color);
   font-family: serif !important;
@@ -84,4 +84,10 @@
 .pcs-active {
   background: var(--bg-primaryColor) !important;
   border: 2px solid var(--bg-primaryColor) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .pcsBtn {
+    padding: 4px 6px;
+  }
 }

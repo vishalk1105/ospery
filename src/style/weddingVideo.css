@@ -3,3 +3,10 @@
   color: #4b4b4bbf !important;
   font-weight: 400 !important;
 }
+.page3Images {
+  border: 5px solid transparent;
+}
+
+.page3Images-active {
+  border: 5px solid var(--primary-color);
+}
