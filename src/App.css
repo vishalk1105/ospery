@@ -18,6 +18,8 @@
 @import url("./style/reactAccordion.css");
 @import url("./style/moneyEnvlope.css");
 @import url("./style/reactCart.css");
+@import url("./style/weddingVideo.css");
+
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);

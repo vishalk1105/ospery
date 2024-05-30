@@ -19,7 +19,9 @@ const ReactCard = ({
         )}
       </div>
       <div className={`card-body ${cardBodyDiv}`}>
-        <h5 className="card-title">{price}</h5>
+        <h5 className="card-title">
+          {price.length !== 0 ? `₹${price}` : "None"}
+        </h5>
       </div>
     </div>
   );

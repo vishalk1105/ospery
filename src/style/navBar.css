@@ -12,6 +12,7 @@
 .nav-item {
   color: #222222;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 .nav-item:hover {
   color: var(--primary-color);

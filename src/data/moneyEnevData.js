@@ -14,7 +14,7 @@ export const weddingData = [
   {
     id: 1,
     imgSrc: "",
-    price: "None",
+    price: "",
   },
   {
     id: 2,

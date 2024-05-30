@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { weddingData } from "../../data/moneyEnevData";
 import ReactCard from "../../components/ReactCard";
 import ReactInput from "../../components/ReactInput";
 const WeddingCrest = () => {
+  const [activeId, setActiveId] = useState([]);
+
+  const onSelectCard = (id) => {
+    const updatedActiveIds = [...activeId];
+    if (activeId.includes(id)) {
+      const index = updatedActiveIds.indexOf(id);
+      updatedActiveIds.splice(index, 1);
+    } else {
+      updatedActiveIds.push(id);
+    }
+    setActiveId(updatedActiveIds);
+  };
+
   return (
     <div className="row row-gap-3 my-4">
       {weddingData.map((ele) => {
@@ -13,7 +26,10 @@ const WeddingCrest = () => {
               imgSrc={ele.imgSrc}
               price={ele.price}
               cardimgDiv={"envImgDiv"}
-              cardBodyDiv={"envCardBody"}
+              cardBodyDiv={`envCardBody ${
+                activeId.includes(ele.id) ? "envCardBody-active" : ""
+              }`}
+              onCardSelect={() => onSelectCard(ele.id)}
             />
           </div>
         );

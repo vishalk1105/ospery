@@ -1,10 +1,11 @@
 import "./App.css";
+import AppRoute from "./routes/AppRoute";
 import "./style/variable.css";
-import MoneyEnvelope from "./view/moneyEnvelop/MoneyEnvelope";
+
 function App() {
   return (
     <div className="App">
-      <MoneyEnvelope />
+      <AppRoute />
     </div>
   );
 }

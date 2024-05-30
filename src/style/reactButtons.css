@@ -5,11 +5,11 @@
   font-weight: 600;
   font-size: 20px;
 }
-.pcsBtn:active,
+/* .pcsBtn:active,
 .pcsBtn:visited {
   background: var(--bg-primaryColor) !important;
   border: 2px solid var(--bg-primaryColor) !important;
-}
+} */
 .offerDiv {
   padding: 8px 34px;
   border: 2px solid var(--primary-color) !important;

@@ -3,7 +3,7 @@ import ReactButton from "./ReactButton";
 import ReactAccordion from "./ReactAccordion";
 import { panels } from "../data/moneyEnevData";
 
-const ReactCart = () => {
+const ReactCart = ({ onClickfn }) => {
   return (
     <div className="cart mb-2">
       <div className="text-center cartText py-2">
@@ -22,6 +22,7 @@ const ReactCart = () => {
           <ReactButton
             btnText={"Add to Cart"}
             btnClass={"btn-danger cartBtn"}
+            onClickfn={onClickfn}
           />
         </div>
       </div>

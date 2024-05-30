@@ -7,10 +7,12 @@ const ReactButton = ({
   btnClass,
   reactBtnOuterDiv,
   btnValue,
+  id,
 }) => {
   return (
     <div className={`reactButton text-center ${reactBtnOuterDiv}`}>
       <button
+        id={id}
         type={btnType}
         className={`btn ${btnClass}`}
         onClick={onClickfn}

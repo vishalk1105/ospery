@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo1.webp";
 
 const NavBar = () => {
   return (
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg ">
+      <div className="container-fluid">
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -13,24 +14,32 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav gap-5">
             <li className="nav-item">
               <img src={logo} alt="" className="logo my-1" />
             </li>
-            <li className="nav-item" role="button">
-              Money Envelope
+            <li role="button">
+              <Link className="nav-item" to={"/"}>
+                Money Envelope
+              </Link>
+            </li>
+            <li role="button">
+              <Link to={"/wedding-video"} className="nav-item ">
+                Wedding invite video
+              </Link>
             </li>
             <li className="nav-item" role="button">
-              Wedding invite video
+              <Link to={"/hamper-note"} className="nav-item ">
+                Hamper Note
+              </Link>
             </li>
             <li className="nav-item" role="button">
-              Hamper Note
-            </li>
-            <li className="nav-item" role="button">
-              Itinerary
+              <Link to={"/itinerary"} className="nav-item ">
+                Itinerary
+              </Link>
             </li>
           </ul>
         </div>
