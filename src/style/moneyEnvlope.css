@@ -1,0 +1,77 @@
+.priceLable {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--secondary-color);
+  font-family: serif !important;
+  font-weight: 600;
+}
+
+.eneMaiDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.priceOffDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.qtyTitle,
+.addOn {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: serif !important;
+}
+
+.qtyDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.addOn {
+  text-align: left;
+}
+.accDiv {
+  align-items: center;
+  gap: 30px;
+}
+
+.moneyAccMainDiv {
+  width: 80%;
+}
+
+.contentOuterDiv {
+  padding: 0 !important;
+}
+.moneyPurchaseDetailDiv {
+  border: 1px solid #d8d8d8;
+  border-radius: 18px;
+  margin-bottom: 13px;
+  padding: 15px 20px !important;
+  color: #4b4b4bbf !important;
+}
+
+.envCardMainDiv {
+  height: 300px;
+}
+.envImgDiv {
+  height: 300px;
+}
+.envImgDiv img {
+  height: 250px;
+  border-bottom: 1px solid #d8d8d8;
+  border-radius: 10px;
+}
+.envCardBody {
+  padding: 10px;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: serif !important;
+  font-weight: 600;
+}

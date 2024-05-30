@@ -17,3 +17,6 @@
   color: var(--primary-color);
   text-decoration: underline;
 }
+.navbar-collapse {
+  justify-content: center !important;
+}

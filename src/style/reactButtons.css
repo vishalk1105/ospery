@@ -10,3 +10,11 @@
   background: var(--bg-primaryColor) !important;
   border: 2px solid var(--bg-primaryColor) !important;
 }
+.offerDiv {
+  padding: 8px 34px;
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: default !important;
+}

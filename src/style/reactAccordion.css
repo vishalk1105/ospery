@@ -1,0 +1,28 @@
+.accordion {
+  --bs-accordion-border-color: none !important;
+}
+
+.accordion-button {
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 15px !important;
+  margin-bottom: 10px;
+  font-weight: 600 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color) !important;
+  background-color: var(--bg-primaryColor) !important;
+  border: 2px solid var(--bg-primaryColor) !important;
+}
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-top-left-radius: 15px !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27none%27 stroke=%27%23b99435%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpath d=%27M2 5L8 11L14 5%27/%3e%3c/svg%3e") !important;
+}

@@ -1,47 +1,8 @@
 main {
   width: 100%;
-
-  overflow: auto;
   height: calc(100% - 62px);
 }
 
 .footer {
   z-index: -1 !important;
 }
-
-/* Money enevelope css */
-.priceLable {
-  font-size: 3rem;
-  text-align: center;
-  color: var(--secondary-color);
-  font-family: serif !important;
-  font-weight: 600;
-}
-
-.eneMaiDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-.priceOffDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.qtyTitle {
-  font-size: 2rem;
-  text-align: center;
-  color: var(--primary-color);
-  font-family: serif !important;
-}
-.qtyDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-/* Money enevelope css */

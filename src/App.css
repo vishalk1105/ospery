@@ -15,11 +15,13 @@
 @import url("./style/navBar.css");
 @import url("./style/title.css");
 @import url("./style/reactButtons.css");
-
+@import url("./style/reactAccordion.css");
+@import url("./style/moneyEnvlope.css");
+@import url("./style/reactCart.css");
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
-  border-color: black !important;
+  border-color: #d8d8d8 !important;
   outline: 0;
   box-shadow: none !important;
 }

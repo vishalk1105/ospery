@@ -1,0 +1,64 @@
+.cart {
+  border: 2px solid var(--primary-color);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.cartText {
+  background-color: var(--primary-color);
+  border-top-right-radius: 250px 200px;
+  border-top-left-radius: 250px 200px;
+  color: white;
+  font-weight: 600;
+}
+
+.cartDiv {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cartBtn {
+  background-color: #bb3655 !important;
+  color: white;
+  padding: 10px 15px;
+}
+
+.priceTag {
+  color: var(--primary-color);
+  font-family: serif !important;
+  font-size: 25px;
+  font-weight: 600;
+}
+.priceTag span {
+  font-size: 18px !important;
+  color: #4b4b4bbf !important;
+  font-weight: 400 !important;
+}
+.priceTagData {
+  font-size: 18px !important;
+  color: #bb3655 !important;
+  font-weight: 500 !important;
+}
+
+.accCartBtn {
+  color: var(--primary-color) !important;
+  border: none !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  margin-bottom: 10px;
+  font-weight: 600 !important;
+}
+
+.accCartBtn:not(.collapsed) {
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid var(--bg-primaryColor) !important;
+}
+.cartContent {
+  border-bottom: 1px solid #d8d8d8 !important;
+  font-size: 18px;
+}

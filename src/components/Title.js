@@ -1,7 +1,7 @@
 import React from "react";
 
-const Title = ({ titleText }) => {
-  return <h2 className="cardTitle">{titleText}</h2>;
+const Title = ({ titleText, titleNameClass }) => {
+  return <h2 className={`cardTitle ${titleNameClass}`}>{titleText}</h2>;
 };
 
 export default Title;
