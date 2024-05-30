@@ -12,6 +12,11 @@
   font-weight: 600;
 }
 
+.emptyDiv {
+  height: 250px;
+  border-bottom: 1px solid #d8d8d8;
+  border-radius: 10px;
+}
 .cartDiv {
   display: flex;
   margin: 10px;
@@ -32,12 +37,12 @@
   font-weight: 600;
 }
 .priceTag span {
-  font-size: 18px !important;
+  font-size: 20px !important;
   color: #4b4b4bbf !important;
   font-weight: 400 !important;
 }
 .priceTagData {
-  font-size: 18px !important;
+  font-size: 20px !important;
   color: #bb3655 !important;
   font-weight: 500 !important;
 }

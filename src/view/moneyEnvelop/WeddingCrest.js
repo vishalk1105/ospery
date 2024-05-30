@@ -20,7 +20,7 @@ const WeddingCrest = () => {
     <div className="row row-gap-3 my-4">
       {weddingData.map((ele) => {
         return (
-          <div className="col-4" key={ele.id}>
+          <div className="col-4 col-lg-3" key={ele.id}>
             <ReactCard
               cardMainDiv={"envCardMainDiv"}
               imgSrc={ele.imgSrc}

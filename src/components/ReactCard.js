@@ -12,6 +12,7 @@ const ReactCard = ({
   return (
     <div className={`card ${cardMainDiv}`} onClick={onCardSelect} key={key}>
       <div className={`${cardimgDiv}`}>
+        {!imgSrc && <div className="emptyDiv"></div>}
         {imgSrc ? (
           <img src={imgSrc} className="card-img-top" alt="..." />
         ) : (

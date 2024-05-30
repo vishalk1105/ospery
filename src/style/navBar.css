@@ -21,3 +21,13 @@
 .navbar-collapse {
   justify-content: center !important;
 }
+.navbar-toggler {
+  color: var(--primary-color) !important;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav {
+    gap: 10px !important;
+  }
+}
