@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/osprey_invites/static/css/main.1093b558.css",
-    "main.js": "/osprey_invites/static/js/main.69382ece.js",
-    "static/js/453.d01efee0.chunk.js": "/osprey_invites/static/js/453.d01efee0.chunk.js",
-    "static/media/logo1.webp": "/osprey_invites/static/media/logo1.2e3ac8fe3d31bf2781af.webp",
-    "index.html": "/osprey_invites/index.html",
-    "main.1093b558.css.map": "/osprey_invites/static/css/main.1093b558.css.map",
-    "main.69382ece.js.map": "/osprey_invites/static/js/main.69382ece.js.map",
-    "453.d01efee0.chunk.js.map": "/osprey_invites/static/js/453.d01efee0.chunk.js.map"
+    "main.css": "/github.io/osprey_invites/static/css/main.1093b558.css",
+    "main.js": "/github.io/osprey_invites/static/js/main.69cb131f.js",
+    "static/js/453.d01efee0.chunk.js": "/github.io/osprey_invites/static/js/453.d01efee0.chunk.js",
+    "static/media/logo1.webp": "/github.io/osprey_invites/static/media/logo1.2e3ac8fe3d31bf2781af.webp",
+    "index.html": "/github.io/osprey_invites/index.html",
+    "main.1093b558.css.map": "/github.io/osprey_invites/static/css/main.1093b558.css.map",
+    "main.69cb131f.js.map": "/github.io/osprey_invites/static/js/main.69cb131f.js.map",
+    "453.d01efee0.chunk.js.map": "/github.io/osprey_invites/static/js/453.d01efee0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1093b558.css",
-    "static/js/main.69382ece.js"
+    "static/js/main.69cb131f.js"
   ]
 }
