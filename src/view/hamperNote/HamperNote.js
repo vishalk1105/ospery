@@ -38,7 +38,9 @@ const HamperNote = () => {
 
   return (
     <MainLayout>
-      <ReactSlider />
+      <div className="sliderDiv">
+        <ReactSlider />
+      </div>
       <div className="container">
         <Title titleText={"Hamper Note"} titleNameClass={"mt-5 mb-3"} />
 

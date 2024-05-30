@@ -18,3 +18,8 @@
   font-size: 20px;
   cursor: default !important;
 }
+@media screen and (max-width: 767px) {
+  .offerDiv {
+    padding: 4px 10px;
+  }
+}

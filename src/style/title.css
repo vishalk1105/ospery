@@ -5,3 +5,9 @@
   font-family: serif !important;
   font-weight: 600;
 }
+
+@media screen and (max-width: 767px) {
+  .cardTitle {
+    font-size: 35px;
+  }
+}

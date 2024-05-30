@@ -90,4 +90,11 @@
   .pcsBtn {
     padding: 4px 6px;
   }
+
+  .priceLable {
+    font-size: 35px;
+  }
+  .qtyDiv {
+    gap: 20px;
+  }
 }

@@ -10,7 +10,10 @@ import { WeddingVideoData } from "../../data/weddingVedio";
 const WeddingInvVideo = () => {
   return (
     <MainLayout>
-      <ReactSlider />
+      <div className="sliderDiv">
+        <ReactSlider />
+      </div>
+
       <div className="container">
         <Title
           titleText={"Wedding Invite Video"}

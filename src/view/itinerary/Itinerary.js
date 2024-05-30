@@ -32,7 +32,9 @@ const Itinerary = () => {
 
   return (
     <MainLayout>
-      <ReactSlider />
+      <div className="sliderDiv">
+        <ReactSlider />
+      </div>
       <div className="container">
         <Title titleText={"Itinerary"} titleNameClass={"mt-5 mb-3"} />
 

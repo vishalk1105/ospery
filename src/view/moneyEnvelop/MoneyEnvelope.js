@@ -37,7 +37,9 @@ function MoneyEnvelope() {
 
   return (
     <MainLayout>
-      <ReactSlider />
+      <div className="sliderDiv">
+        <ReactSlider />
+      </div>
       <div className="container">
         <Title titleText={"Money Enevelope"} titleNameClass={"mt-5 mb-3"} />
 
