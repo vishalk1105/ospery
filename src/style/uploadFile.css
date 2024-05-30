@@ -49,3 +49,9 @@
   bottom: 0px;
   left: 0px;
 }
+
+@media screen and (max-width: 767px) {
+  #form-file-upload {
+    width: 150px !important;
+  }
+}

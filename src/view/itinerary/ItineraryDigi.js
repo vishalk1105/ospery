@@ -37,8 +37,8 @@ const ItineraryDigi = () => {
         );
       })}
 
-      <div className=" px-0">
-        <div className="d-flex gap-4 justify-content-between border border-tertiory rounded-4">
+      <div className=" px-2">
+        <div className="d-flex gap-2 justify-content-between border border-tertiory rounded-4">
           <div className="ps-3 mt-3 ">
             <p className="personTextHeader">Personalise illustrations</p>
             <p className="itiPrice">
