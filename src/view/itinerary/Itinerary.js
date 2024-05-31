@@ -49,6 +49,7 @@ const Itinerary = () => {
             {btnData.map((ele) => (
               <ReactButton
                 key={ele.id}
+                reactBtnOuterDiv="reactBtnOuterDiv"
                 id={ele.id}
                 btnClass={`pcsBtn ${activeId === ele.id ? "pcs-active" : ""}`}
                 btnValue={ele.value}

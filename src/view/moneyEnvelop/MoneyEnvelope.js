@@ -41,7 +41,7 @@ function MoneyEnvelope() {
         <ReactSlider />
       </div>
       <div className="container">
-        <Title titleText={"Money Enevelope"} titleNameClass={"mt-5 mb-3"} />
+        <Title titleText={"Money Envelope"} titleNameClass={"mt-5 mb-3"} />
 
         <div className="eneMaiDiv mb-5">
           <div className="priceOffDiv d-flex gap-5">
@@ -55,6 +55,7 @@ function MoneyEnvelope() {
               <ReactButton
                 key={ele.id}
                 id={ele.id}
+                reactBtnOuterDiv="reactBtnOuterDiv"
                 btnClass={`pcsBtn ${activeId === ele.id ? "pcs-active" : ""}`}
                 btnValue={ele.value}
                 btnText={ele.text}

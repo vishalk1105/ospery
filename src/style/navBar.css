@@ -22,12 +22,86 @@
   justify-content: center !important;
 }
 .navbar-toggler {
-  color: var(--primary-color) !important;
+  color: none !important;
   background-color: transparent;
+  border: none !important;
 }
 
+.navbar-toggler-icon {
+  background-image: url("../assets/logo/logo1.webp") !important;
+  width: 157px !important;
+  height: 68px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
 @media only screen and (max-width: 992px) {
   .navbar-nav {
     gap: 10px !important;
+  }
+  .nav-item img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-item {
+    font-size: 18px;
+  }
+  .slideshowDot {
+    scale: 0.5;
+    margin-top: 0px !important;
+  }
+  .cardTitle,
+  .priceLable {
+    font-size: 28px !important;
+  }
+  .cardTitle {
+    margin-top: 10px !important;
+  }
+  .offerDiv,
+  .wedInvoffer {
+    font-size: 20px !important;
+    text-align: center;
+  }
+  .priceTag {
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+
+  .priceTag span {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+  .priceTagData {
+    text-align: center !important;
+  }
+  .cartDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .cartBtn {
+    width: 100%;
+  }
+  .cartContent {
+    text-align: justify;
+  }
+
+  /* Money envlope*/
+  .qtyTitle {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+  .pcsBtn {
+    font-size: 18px !important;
+    width: 100% !important;
+  }
+  .qtyDiv {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  .reactBtnOuterDiv {
+    width: 100%;
   }
 }

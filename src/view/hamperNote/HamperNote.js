@@ -56,6 +56,7 @@ const HamperNote = () => {
               <ReactButton
                 key={ele.id}
                 id={ele.id}
+                reactBtnOuterDiv="reactBtnOuterDiv"
                 btnClass={`pcsBtn ${activeId === ele.id ? "pcs-active" : ""}`}
                 btnValue={ele.value}
                 btnText={ele.text}
