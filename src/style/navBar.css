@@ -45,6 +45,7 @@
   }
 }
 
+/* For Mobile */
 @media only screen and (max-width: 480px) {
   .nav-item {
     font-size: 18px;
@@ -90,7 +91,7 @@
 
   /* Money envlope*/
   .qtyTitle {
-    font-size: 20px !important;
+    font-size: 22px !important;
     font-weight: 600;
   }
   .pcsBtn {
@@ -103,5 +104,9 @@
   }
   .reactBtnOuterDiv {
     width: 100%;
+  }
+
+  .priceOffDiv {
+    gap: 10px !important;
   }
 }
