@@ -11,10 +11,10 @@ const WeddingCrest = ({ priceFromwedCrest }) => {
   };
 
   return (
-    <div className="row row-gap-2 my-1 px-2">
+    <div className="row row-gap-3 my-1 px-2">
       {weddingData.map((ele) => {
         return (
-          <div className="col-4 col-lg-3 gx-2 " key={ele.id}>
+          <div className="col-4 col-lg-3 gx-3 " key={ele.id}>
             <ReactCard
               cardMainDiv={`envCardMainDiv ${
                 activeId === ele.id ? "envCardMainDiv-active" : ""
