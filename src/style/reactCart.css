@@ -13,15 +13,15 @@
 }
 
 .emptyDiv {
-  height: 250px;
-  border-bottom: 1px solid #d8d8d8;
   border-radius: 10px;
+  background-color: white;
 }
 .cartDiv {
   display: flex;
   margin: 10px;
   justify-content: center;
   gap: 25px;
+  align-items: center;
 }
 
 .cartBtn {
@@ -37,14 +37,14 @@
   font-weight: 600;
 }
 .priceTag span {
-  font-size: 20px !important;
+  font-size: 20px;
   color: #4b4b4bbf !important;
   font-weight: 400 !important;
 }
 .priceTagData {
-  font-size: 20px !important;
+  font-size: 20px;
   color: #bb3655 !important;
-  font-weight: 500 !important;
+  font-weight: 500;
 }
 
 .accCartBtn {
@@ -66,4 +66,34 @@
 .cartContent {
   border-bottom: 1px solid #d8d8d8 !important;
   font-size: 18px;
+}
+
+.emptyDiv {
+  position: relative;
+  border-radius: 15px;
+}
+
+.emptyDiv::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.emptyDiv img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.priceDetailDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

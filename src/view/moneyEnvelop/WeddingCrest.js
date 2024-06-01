@@ -2,34 +2,28 @@ import React, { useState } from "react";
 import { weddingData } from "../../data/moneyEnevData";
 import ReactCard from "../../components/ReactCard";
 import ReactInput from "../../components/ReactInput";
-const WeddingCrest = () => {
-  const [activeId, setActiveId] = useState([]);
+const WeddingCrest = ({ priceFromwedCrest }) => {
+  const [activeId, setActiveId] = useState(1);
 
-  const onSelectCard = (id) => {
-    const updatedActiveIds = [...activeId];
-    if (activeId.includes(id)) {
-      const index = updatedActiveIds.indexOf(id);
-      updatedActiveIds.splice(index, 1);
-    } else {
-      updatedActiveIds.push(id);
-    }
-    setActiveId(updatedActiveIds);
+  const onSelectCard = (id, price) => {
+    setActiveId(id);
+    priceFromwedCrest(price);
   };
 
   return (
-    <div className="row row-gap-3 my-4">
+    <div className="row row-gap-3  my-4">
       {weddingData.map((ele) => {
         return (
-          <div className="col-4 col-lg-3" key={ele.id}>
+          <div className="col-4 col-lg-3 wedCrestCard" key={ele.id}>
             <ReactCard
-              cardMainDiv={"envCardMainDiv"}
+              cardMainDiv={`envCardMainDiv ${
+                activeId === ele.id ? "envCardMainDiv-active" : ""
+              }`}
               imgSrc={ele.imgSrc}
               price={ele.price}
               cardimgDiv={"envImgDiv"}
-              cardBodyDiv={`envCardBody ${
-                activeId.includes(ele.id) ? "envCardBody-active" : ""
-              }`}
-              onCardSelect={() => onSelectCard(ele.id)}
+              cardBodyDiv={`envCardBody `}
+              onCardSelect={() => onSelectCard(ele.id, ele.price)}
             />
           </div>
         );

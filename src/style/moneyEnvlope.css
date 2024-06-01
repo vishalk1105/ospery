@@ -57,16 +57,16 @@
   text-align: justify;
 }
 
-.envCardMainDiv {
+/* .envCardMainDiv {
   height: 300px;
-}
-.envImgDiv {
+} */
+/* .envImgDiv {
   height: 300px;
-}
+} */
 .envImgDiv img {
-  height: 250px;
+  /* height: 250px; */
   border-bottom: 1px solid #d8d8d8;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .envCardBody {
   padding: 10px;
@@ -75,12 +75,12 @@
   color: var(--primary-color);
   font-family: serif !important;
   font-weight: 600;
-  cursor: pointer;
 }
-.envCardBody-active {
+.envCardMainDiv-active {
   background: var(--bg-primaryColor) !important;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 .pcs-active {
   background: var(--bg-primaryColor) !important;

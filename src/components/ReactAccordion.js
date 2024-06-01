@@ -1,6 +1,12 @@
 import React from "react";
 
-const ReactAccordion = ({ accOuterClass, accContent, items, accordionBtn }) => {
+const ReactAccordion = ({
+  accOuterClass,
+  accContent,
+  items,
+  accordionBtn,
+  priceFromwedCrest,
+}) => {
   return (
     <div className={`accordion ${accOuterClass}`} id="accordionExample">
       {items.map((item, index) => (
@@ -28,7 +34,7 @@ const ReactAccordion = ({ accOuterClass, accContent, items, accordionBtn }) => {
           >
             <div className={`accordion-body ${accContent}`}>
               {typeof item.content === "function"
-                ? item.content()
+                ? item.content(priceFromwedCrest)
                 : item.content}
             </div>
           </div>

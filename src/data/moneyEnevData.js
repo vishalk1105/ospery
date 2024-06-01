@@ -7,44 +7,50 @@ export const MoneyEnvData = [
     title: "Personalisation at Rs 500",
     content: () => <MoneyEnevDetail />,
   },
-  { id: "ac2", title: "Wedding Crest", content: () => <WeddingCrest /> },
+  {
+    id: "ac2",
+    title: "Wedding Crest",
+    content: (priceFromwedCrest) => (
+      <WeddingCrest priceFromwedCrest={priceFromwedCrest} />
+    ),
+  },
 ];
 
 export const weddingData = [
   {
     id: 1,
     imgSrc: "",
-    price: "",
+    price: 0,
   },
   {
     id: 2,
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/WL-02-mockup-jpeg.jpg?v=1715164214&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: 3,
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/WL-03-mockup-jpeg.jpg?v=1715164315&width=360",
-    price: "1000/-",
+    price: 1500,
   },
   {
     id: 4,
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/WL-04-mockup-jpeg.jpg?v=1715164572&width=360",
-    price: "1000/-",
+    price: 1200,
   },
   {
     id: 5,
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/WL-05-mockup-jpeg.jpg?v=1715164640&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: 6,
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/WL-01-mockup-jpeg.jpg?v=1715163956&width=360",
-    price: "1000/-",
+    price: 1000,
   },
 ];
 

@@ -7,27 +7,32 @@ import ReactAccordion from "../../components/ReactAccordion";
 import { MoneyEnvData } from "../../data/moneyEnevData";
 import ReactCart from "../../components/ReactCart";
 function MoneyEnvelope() {
-  const [activeId, setActiveId] = useState(null);
-  const [showCart, setShowCart] = useState(false);
-  const selectPsc = (id) => {
+  const [activeId, setActiveId] = useState("20env");
+  const [crestPrice, setCrestPrice] = useState(0);
+  const [qty, setQty] = useState(20);
+  const selectPsc = (id, value) => {
     setActiveId(id);
-    setShowCart(true);
+    setQty(value);
   };
+  const priceFromwedCrest = (data) => {
+    setCrestPrice(data);
+  };
+
   const btnData = [
     {
       id: "20env",
       value: 20,
-      text: "20 Pcs",
+      text: "20 pcs",
     },
     {
       id: "50env",
       value: 50,
-      text: "50 Pcs",
+      text: "50 pcs",
     },
     {
       id: "100env",
       value: 100,
-      text: "100 Pcs",
+      text: "100 pcs",
     },
   ];
 
@@ -50,7 +55,7 @@ function MoneyEnvelope() {
           </div>
 
           <div className="qtyDiv  d-flex justify-content-center">
-            <div className="qtyTitle me-2">Quantity :</div>
+            <div className="qtyTitle me-2">Quantity:</div>
             {btnData.map((ele) => (
               <ReactButton
                 key={ele.id}
@@ -59,7 +64,7 @@ function MoneyEnvelope() {
                 btnClass={`pcsBtn ${activeId === ele.id ? "pcs-active" : ""}`}
                 btnValue={ele.value}
                 btnText={ele.text}
-                onClickfn={() => selectPsc(ele.id)}
+                onClickfn={() => selectPsc(ele.id, ele.value)}
               />
             ))}
           </div>
@@ -69,11 +74,11 @@ function MoneyEnvelope() {
               accContent={"contentOuterDiv"}
               accOuterClass="w-100"
               items={MoneyEnvData}
-              setShowCart={setShowCart}
+              priceFromwedCrest={priceFromwedCrest}
             />
           </div>
         </div>
-        {showCart && <ReactCart onClickfn={onAddCart} />}
+        <ReactCart qty={qty} onClickfn={onAddCart} wedCrestPrice={crestPrice} />
       </div>
     </MainLayout>
   );
