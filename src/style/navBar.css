@@ -61,11 +61,14 @@
   .cardTitle {
     margin-top: 10px !important;
   }
-  .offerDiv,
-  .wedInvoffer {
+  .offerDiv {
     font-size: 14px !important;
     text-align: center;
   }
+  .wedInvoffer {
+    font-size: 18px !important;
+  }
+
   .priceTag {
     font-size: 16px !important;
     text-align: center !important;
@@ -82,13 +85,18 @@
   }
   .priceTagData {
     font-size: 14px !important;
-    text-align: center !important;
+    text-align: left !important;
     font-weight: 400 !important;
+  }
+
+  .cart {
+    margin: 0 !important;
   }
   .cartDiv {
     align-items: center !important;
     margin: 8px 6px !important;
-    gap: 12px !important;
+    gap: 0px !important;
+    justify-content: space-around !important;
   }
   .cartBtn {
     width: 100%;

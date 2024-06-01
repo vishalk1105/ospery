@@ -5,7 +5,7 @@ import { panels } from "../data/moneyEnevData";
 
 const ReactCart = ({ onClickfn, qty, wedCrestPrice }) => {
   return (
-    <div className="cart mb-2">
+    <div className="cart sticky-bottom bg-light">
       <div className="text-center cartText py-2">
         Save 50% on order for your spouse
       </div>

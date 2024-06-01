@@ -45,7 +45,7 @@ const Itinerary = () => {
           </div>
 
           <div className="qtyDiv d-flex justify-content-center">
-            <div className="qtyTitle me-2">Quantity :</div>
+            <div className="qtyTitle me-2">Quantity:</div>
             {btnData.map((ele) => (
               <ReactButton
                 key={ele.id}

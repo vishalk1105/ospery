@@ -78,8 +78,8 @@ function MoneyEnvelope() {
             />
           </div>
         </div>
-        <ReactCart qty={qty} onClickfn={onAddCart} wedCrestPrice={crestPrice} />
       </div>
+      <ReactCart qty={qty} onClickfn={onAddCart} wedCrestPrice={crestPrice} />
     </MainLayout>
   );
 }

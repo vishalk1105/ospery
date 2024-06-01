@@ -27,9 +27,7 @@ const ReactAccordion = ({
           </h2>
           <div
             id={`collapse${item.id}`}
-            className={`accordion-collapse collapse ${
-              index === 0 ? "show" : ""
-            }`}
+            className={`accordion-collapse collapse `}
             data-bs-parent="#accordionExample"
           >
             <div className={`accordion-body ${accContent}`}>
