@@ -77,7 +77,11 @@
 
   /* Money envlope*/
   .accDiv {
-    margin-top: 30px !important;
+    margin-top: -3px !important;
+  }
+  .addOn {
+    font-size: 18px !important;
+    font-weight: 600;
   }
   .accordion-button {
     padding: 6px 15px;

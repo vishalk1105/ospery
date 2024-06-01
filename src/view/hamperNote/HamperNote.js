@@ -38,7 +38,7 @@ const HamperNote = () => {
   ];
 
   const onAddCart = () => {
-    prompt("Added to the cart");
+    console.log("Added to Cart");
   };
 
   return (

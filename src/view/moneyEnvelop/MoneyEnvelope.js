@@ -37,7 +37,7 @@ function MoneyEnvelope() {
   ];
 
   const onAddCart = () => {
-    prompt("Added to the cart");
+    console.log("Added to Cart");
   };
 
   return (
@@ -69,7 +69,7 @@ function MoneyEnvelope() {
             ))}
           </div>
           <div className="accDiv">
-            {/* <div className=" addOn me-4 mb-2 text-left">Add ons :</div>*/}
+            <div className="addOn me-4 mb-2 text-left">Add ons :</div>
             <ReactAccordion
               accContent={"contentOuterDiv"}
               accOuterClass="w-100"

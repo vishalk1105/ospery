@@ -38,7 +38,6 @@ const Itinerary = () => {
       text: "100 Pcs",
     },
   ];
-  console.log(crestPrice, digiCrestPrice, "price");
 
   return (
     <MainLayout>
