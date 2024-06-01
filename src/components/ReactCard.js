@@ -30,7 +30,7 @@ const ReactCard = ({
         )}
       </div>
       <div className={`card-body ${cardBodyDiv}`}>
-        <h5 className="card-title">{price > 0 ? `₹${price}/-` : "None"}</h5>
+        <h5 className="card-title">{price > 0 ? `Rs ${price}/-` : "None"}</h5>
       </div>
     </div>
   );

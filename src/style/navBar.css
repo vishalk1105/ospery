@@ -109,6 +109,12 @@
   }
 
   /* Money envlope*/
+  .accDiv {
+    margin-top: 30px !important;
+  }
+  .accordion-button {
+    padding: 6px 15px;
+  }
   .qtyTitle {
     font-size: 18px !important;
     font-weight: 600;

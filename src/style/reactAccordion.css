@@ -5,7 +5,7 @@
 .accordion-button {
   color: var(--primary-color) !important;
   border: 2px solid var(--primary-color) !important;
-  border-radius: 15px !important;
+  border-radius: 10px !important;
   margin-bottom: 10px;
   font-weight: 600 !important;
 }
@@ -16,7 +16,7 @@
   border: 2px solid var(--bg-primaryColor) !important;
 }
 .accordion-item:first-of-type > .accordion-header .accordion-button {
-  border-top-left-radius: 15px !important;
+  border-top-left-radius: 10px !important;
 }
 
 .accordion-button:focus {

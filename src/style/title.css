@@ -4,6 +4,7 @@
   color: var(--primary-color);
   font-family: serif !important;
   font-weight: 600;
+  margin-top: 10px !important;
 }
 
 @media screen and (max-width: 767px) {

@@ -34,6 +34,8 @@ const ReactCart = ({ onClickfn, qty, wedCrestPrice }) => {
             items={panels}
             accordionBtn={"accCartBtn"}
             accContent={"cartContent"}
+            accOuterClass={"cartOuterClass"}
+            accItem={"cartItemClass"}
           />
         </div>
       )}
