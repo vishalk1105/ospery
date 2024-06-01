@@ -8,9 +8,18 @@ import { ItineraryData } from "../../data/itineraryData";
 import { panels } from "../../data/moneyEnevData";
 
 const Itinerary = () => {
-  const [activeId, setActiveId] = useState(null);
+  const [activeId, setActiveId] = useState("20env");
+  const [crestPrice, setCrestPrice] = useState(0);
+  const [digiCrestPrice, setDigiCrestPrice] = useState(0);
   const selectPsc = (id) => {
     setActiveId(id);
+  };
+  const priceFromwedCrest = (data) => {
+    setCrestPrice(data);
+  };
+
+  const digitalCrestPrice = (data) => {
+    setDigiCrestPrice(data);
   };
   const btnData = [
     {
@@ -29,6 +38,7 @@ const Itinerary = () => {
       text: "100 Pcs",
     },
   ];
+  console.log(crestPrice, digiCrestPrice, "price");
 
   return (
     <MainLayout>
@@ -63,6 +73,8 @@ const Itinerary = () => {
               accContent={"contentOuterDiv"}
               accOuterClass="w-100"
               items={ItineraryData}
+              priceFromwedCrest={priceFromwedCrest}
+              digiCrestPrice={digitalCrestPrice}
             />
           </div>
           <div className="px-4">

@@ -19,7 +19,8 @@ export const MoneyEnvData = [
 export const weddingData = [
   {
     id: 1,
-    imgSrc: "",
+    imgSrc:
+      "https://ospreyinvites.com/cdn/shop/files/WL-02-mockup-jpeg.jpg?v=1715164214&width=360",
     price: 0,
   },
   {

@@ -12,18 +12,12 @@ const ReactCard = ({
   return (
     <div className={`card ${cardMainDiv}`} onClick={onCardSelect} key={key}>
       <div className={`${cardimgDiv}`}>
-        {!imgSrc && (
+        {price === 0 && (
           <div className="emptyDiv">
-            <img
-              src={
-                "https://ospreyinvites.com/cdn/shop/files/WL-02-mockup-jpeg.jpg?v=1715164214&width=360"
-              }
-              className="card-img-top"
-              alt="..."
-            />
+            {<img src={imgSrc} className="card-img-top emptyImg" alt="..." />}
           </div>
         )}
-        {imgSrc ? (
+        {imgSrc && price > 0 ? (
           <img src={imgSrc} className="card-img-top" alt="..." />
         ) : (
           <span></span>

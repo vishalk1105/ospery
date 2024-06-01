@@ -7,6 +7,7 @@ const ReactAccordion = ({
   accordionBtn,
   priceFromwedCrest,
   accItem,
+  digiCrestPrice,
 }) => {
   return (
     <div className={`accordion ${accOuterClass}`} id="accordionExample">
@@ -35,7 +36,7 @@ const ReactAccordion = ({
           >
             <div className={`accordion-body ${accContent}`}>
               {typeof item.content === "function"
-                ? item.content(priceFromwedCrest)
+                ? item.content(priceFromwedCrest || digiCrestPrice)
                 : item.content}
             </div>
           </div>

@@ -39,8 +39,8 @@ const WeddingInvVideo = () => {
             />
           </div>
         </div>
-        <ReactCart />
       </div>
+      <ReactCart />
     </MainLayout>
   );
 };

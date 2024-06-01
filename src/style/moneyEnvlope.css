@@ -115,7 +115,9 @@ input::-webkit-input-placeholder {
   background: var(--bg-primaryColor) !important;
   border: 2px solid var(--bg-primaryColor) !important;
 }
-
+/* .emptyImg {
+  position: fixed;
+} */
 @media only screen and (max-width: 768px) {
   .pcsBtn {
     padding: 4px 6px;

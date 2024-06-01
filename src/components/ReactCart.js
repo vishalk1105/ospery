@@ -4,6 +4,10 @@ import ReactAccordion from "./ReactAccordion";
 import { panels } from "../data/moneyEnevData";
 
 const ReactCart = ({ onClickfn, qty, wedCrestPrice }) => {
+  const totalPrice = !isNaN(qty * 100 + wedCrestPrice)
+    ? qty * 100 + wedCrestPrice
+    : 2000;
+
   return (
     <div className="cart sticky-bottom bg-light">
       <div className="text-center cartText py-2">
@@ -11,9 +15,13 @@ const ReactCart = ({ onClickfn, qty, wedCrestPrice }) => {
       </div>
       <div className="cartDiv my-3">
         <div className="priceDetailDiv">
-          <div className="priceTag">
-            ₹ {qty * 100 + wedCrestPrice}/- <span>Intro + 1 page in cart</span>
-          </div>
+          {totalPrice && (
+            <div className="priceTag">
+              ₹{totalPrice}
+              /- <span>Intro + 1 page in cart</span>
+            </div>
+          )}
+
           {wedCrestPrice !== 0 && (
             <div className="priceTagData">
               includes Wedding crest + Caricature

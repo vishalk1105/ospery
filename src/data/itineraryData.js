@@ -8,66 +8,75 @@ export const ItineraryData = [
     title: "Custom text",
     content: () => <MoneyEnevDetail />,
   },
-  { id: "it2", title: "+ Wedding Crest", content: () => <WeddingCrest /> },
+  {
+    id: "it2",
+    title: "+ Wedding Crest",
+    content: (priceFromwedCrest) => (
+      <WeddingCrest priceFromwedCrest={priceFromwedCrest} />
+    ),
+  },
   {
     id: "it3",
     title: "+ Digital Illustration",
-    content: () => <ItineraryDigi />,
+    content: (digiCrestPrice) => (
+      <ItineraryDigi digiCrestPrice={digiCrestPrice} />
+    ),
   },
 ];
 
 export const digitalIllustraionData = [
   {
     id: "dg1",
-    imgSrc: "",
-    price: "",
+    imgSrc:
+      "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
+    price: 0,
   },
   {
     id: "2",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: "dg3",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: "dg4",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: "dg5",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: "dg6",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: "dg7",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: "dg8",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
   {
     id: "dg9",
     imgSrc:
       "https://ospreyinvites.com/cdn/shop/files/c01_1.jpg?v=1705041255&width=360",
-    price: "1000/-",
+    price: 1000,
   },
 ];

@@ -62,7 +62,7 @@
   background-color: transparent !important;
   border: none !important;
   border-radius: 0 !important;
-  background-color: #f8f9fa !important;
+  background-color: transparent !important;
   border-bottom: 2px solid var(--bg-primaryColor) !important;
 }
 .cartContent {
